@@ -1,0 +1,25 @@
+<% var n=888; %>
+<%var m="<font color=red>Green</font>";
+    var tuoi=25 ;%>
+<!DOCTYPE html> 
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Chào mừng đến với trang chủ ejs, từ <span style="color:red; font-weight: bold">views/trangchu.ejs</span></h1>
+    <h2><%= n %></h2>
+    <h3><%- m %></h3>
+    <% if(tuoi>=18){%>
+        <h2>Bạn đủ  tuổi</h2>
+    <%}else
+    {%>
+        <h2>Bạn chưa đủ tuổi</h2>
+    <%} %>
+    
+    
+        <% for(var i=1; i<=5; i++){%>
+            <h3>Khóa học node js -<%=i%></h3> 
+        <% } %>
+</body>
+</html>
